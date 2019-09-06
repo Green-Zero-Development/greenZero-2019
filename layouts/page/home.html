@@ -42,22 +42,17 @@
   ];
   function getRandomHey() {
     var randomIndexText = Math.floor(Math.random() * imgText.length);
-    var img = '<span class="lg:border-t-4 border-color-008000 pl-5 highlight-text">'
+    var img = '<span class="lg:border-t-4 border-color-008000 ml-5 highlight-text">'
     img += imgText[randomIndexText]; 
     img += '</span> </h1>'
     return img;
   }
 </script>
 
-<div class="flex flex-wrap pt-20 sm:pt-32 lg:pt-48">
+<div class="flex flex-wrap pt-20 sm:pt-32 lg:pt-40">
     <div class="flex flex-wrap w-5/6 sm:w-4/5 xxl:w-3/4 mx-auto">
         <div class="flex flex-wrap w-5/6 mr-auto">
-            <h1 class="font-ibm-conds text-3xl sm:text-5xl xxl:text-6xl font-thin tracking-wide pb-8 leading-none">Websites worthy of a    <noscript>
-                <span class="border-t-4 border-color-008000 pl-5 highlight-text">Real Like</span></h1>
-            </noscript>
-            <script type="text/javascript">
-                document.write(getRandomHey());
-            </script>
+            <h1 class="font-ibm-conds text-3xl sm:text-5xl xxl:text-6xl font-thin tracking-wide pb-8 leading-none">Websites worthy of a<noscript><span class="border-t-4 border-color-008000 ml-5 highlight-text">Real Like</span></h1></noscript><script type="text/javascript">document.write(getRandomHey());</script>
         </div>
         <div class="w-5/6 lg:w-1/2 mx-auto">
             <p class="font-ibm-serif text-base md:text-xl lg:text-2xl font-thin pb-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -68,7 +63,7 @@
     </div>
 </div>
 
-<div class="flex flex-wrap w-1/2 ml-auto bg-gray-100 -mt-112 lg:-mt-64">
+<div class="flex flex-wrap w-1/2 ml-auto bg-gray-100 -mt-120 lg:-mt-80">
     <div class="py-72"></div>
 </div>
 
