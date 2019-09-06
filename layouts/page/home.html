@@ -31,6 +31,15 @@
 .work-example-header {
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
+.quote-home-page {
+    background-image: url("https://res.cloudinary.com/animated-eagle/image/upload/o_20/v1567800686/greenZero/blockquote-home.png");
+    background-size: 200px;
+    background-position: -30px -60px;
+    background-repeat: no-repeat;
+}
+.on-the-fence-article-box {
+    background: linear-gradient(217deg, limegreen, #008000);
+}
 </style>
 
 <script type="text/javascript">
@@ -50,9 +59,9 @@
 </script>
 
 <div class="flex flex-wrap pt-40">
-    <div class="flex flex-wrap w-5/6 sm:w-4/5 xxl:w-3/4 mx-auto">
+    <div class="flex flex-wrap w-5/6 sm:w-4/5 mx-auto">
         <div class="flex flex-wrap w-5/6 mr-auto">
-            <h1 class="font-ibm-conds text-3.5xl sm:text-5xl xxl:text-6xl font-thin tracking-wide pb-8 leading-none">Websites worthy of a<noscript><span class="border-t-4 border-color-008000 ml-2 lg:ml-5 highlight-text">Real Like</span></h1></noscript><script type="text/javascript">document.write(getRandomHey());</script>
+            <h1 class="font-ibm-conds text-3.5xl sm:text-5xl xxl:text-6xl font-thin tracking-wide pb-8 xl:pl-20 leading-none">Websites worthy of a<noscript><span class="border-t-4 border-color-008000 ml-2 lg:ml-5 highlight-text">Real Like</span></h1></noscript><script type="text/javascript">document.write(getRandomHey());</script>
         </div>
         <div class="w-5/6 lg:w-1/2 mx-auto">
             <p class="font-ibm-serif text-lg md:text-xl lg:text-2xl font-thin pb-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -88,15 +97,45 @@
     </div>
 </div>
 
-<div class="flex flex-wrap">
-    <div class="w-5/6 mx-auto pt-8">
-        <blockquote class="font-ibm-serif text-4xl font-thin">greenZero helped us ditch a confusing and slow website editing process that we'd been dealing with for months. Our new website has the best of both worlds - it's quick for our users and simple for us to edit.</blockquote>
+<div class="flex flex-wrap pb-40">
+    <div class="w-5/6 lg:w-3/4 mx-auto mt-32">
+        <blockquote class="font-ibm-serif text-2xl sm:text-3xl lg:text-4xl font-thin py-8 lg:px-12 quote-home-page">greenZero helped us ditch a confusing and slow website editing process that we'd been dealing with for months. Our new website has the best of both worlds - it's quick for our users and simple for us to edit.</blockquote>
+        <h6 class="font-ibm-mono lg:px-12">Tim Keeler</h6>
+        <p class="font-ibm-serif font-thin text-sm pb-16 lg:px-12">Founder CEO, Remediant Inc.</p>
+        <a href="" class="lg:px-12">
+            <span class="font-ibm-conds text-base font-bold hover:text-white border-b-4 border-color-008000 uppercase py-2 hover:pb-1 px-2 home-hero-button">how we helped</span>
+        </a>
     </div>
 </div>
 
-<div class="py-80"></div>
-<div class="py-80"></div>
-<div class="py-80"></div>
-<div id="bottom" class="py-80"></div>
-<h1>hey this is the bottom</h1>
+<div class="flex flex-wrap">
+    <div class="flex flex-wrap items-center w-full lg:w-11/12 bg-gray-300 mx-auto px-12">
+        <h2 class="font-ibm-conds text-4xl font-thin">On the Fence</h2>
+        <a href="" class="sm:ml-auto">
+            <span class="font-ibm-conds text-xs font-bold hover:text-white border-b-2 border-color-008000 uppercase py-2 hover:pb-1 px-2 home-hero-button">learn more about the web</span>
+        </a>
+    </div>
+</div>
+
+<div class="flex flex-wrap w-5/6 mr-auto bg-gray-100 -mt-32">
+    <div class="py-72"></div>
+</div>
+
+<div class="flex flex-wrap lg:flex-no-wrap w-full -mt-120 px-3 sm:px-8">
+    <div class="w-11/12 md:w-1/2 lg:w-1/3 mx-auto pb-8 mb-8 sm:mb-0 shadow-lg on-the-fence-article-box">
+        <img src="/pageimg/femac-project.jpg">
+        <h6 class="font-ibm-serif text-2xs font-thin text-white pt-8 px-8 uppercase">ease of use</h6>
+        <h3 class="font-ibm-conds text-lg xl:text-2xl font-bold text-white px-8 leading-tight">Do I need Wordpress to edit my website's content myself?</h3>
+    </div>
+    <div class="w-11/12 md:w-1/2 lg:w-1/3 mx-auto lg:mx-8 pb-8 mb-8 sm:mb-0 shadow-lg on-the-fence-article-box">
+        <img src="/pageimg/femac-project.jpg">
+        <h6 class="font-ibm-serif text-2xs font-thin text-white pt-8 px-8 uppercase">website speed</h6>
+        <h3 class="font-ibm-conds text-lg xl:text-2xl font-bold text-white px-8 leading-tight">Do I need Wordpress to edit my website's content myself?</h3>
+    </div>
+    <div class="w-11/12 md:w-1/2 lg:w-1/3 mx-auto sm:mx-0 sm:mr-auto lg:mr-0 lg:mx-auto pb-8 mb-8 sm:mb-0 shadow-lg on-the-fence-article-box">
+        <img src="/pageimg/femac-project.jpg">
+        <h6 class="font-ibm-serif text-2xs font-thin text-white pt-8 px-8 uppercase">ease of use</h6>
+        <h3 class="font-ibm-conds text-lg xl:text-2xl font-bold text-white px-8 leading-tight">Do I need Wordpress to edit my website's content myself?</h3>
+    </div>
+</div>
 {{ end }}
