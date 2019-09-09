@@ -71,6 +71,7 @@ function scrollAnchors(e, respond = null) {
 
 var slider = tns({
   "container": "#homepage-slider-images",
+  "nav": true,
   "items": 1,
   "controlsContainer": "#slider-controls",
   "swipeAngle": false,
@@ -79,17 +80,7 @@ var slider = tns({
   "mouseDrag": true,
   "mode": "gallery",
   "autoplay": false,
-  "autoplayHoverPause": true
-});
-
-var sliderTestimonials = tns({
-  "container": "#testimonial-slider-images",
-  "items": 1,
-  "controlsContainer": "#testimonial-slider-controls",
-  "swipeAngle": false,
-  "speed": 400,
-  "center": true,
-  "mouseDrag": true
+  "navPosition": "bottom"
 });
 
 // END
