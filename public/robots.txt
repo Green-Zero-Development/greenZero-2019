@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /
+
+
+
+Sitemap: https://greenzero-2019.netlify.com/sitemapindex.xml
