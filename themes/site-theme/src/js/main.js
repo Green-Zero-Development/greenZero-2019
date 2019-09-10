@@ -75,7 +75,6 @@ var slider = tns({
   "items": 1,
   "controlsContainer": "#slider-controls",
   "swipeAngle": false,
-  "speed": 400,
   "center": true,
   "mouseDrag": true,
   "mode": "gallery",

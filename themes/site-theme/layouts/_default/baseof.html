@@ -12,6 +12,11 @@
         {{ partial "head/rss.html" . }}
         {{ partial "head/fontAwesome.html" . }}
         {{ partial "head/googleAnalytics.html" . }}
+        <link rel="manifest" href="/manifest.json">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="greenZero PWA">
+        <meta name="theme-color" content="#2F3BA2" />
     </head>
 
 {{ partial "head/siteSchema" . }}

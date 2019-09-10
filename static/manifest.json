@@ -1,0 +1,33 @@
+{
+    "name": "greenZero",
+    "short_name": "greenZero",
+    "icons": [{
+        "src": "/favi/favicon-128.png",
+          "sizes": "128x128",
+          "type": "image/png"
+        }, {
+          "src": "/favi/mstile-144x144.png",
+          "sizes": "144x144",
+          "type": "image/png"
+        }, {
+          "src": "/favi/apple-touch-icon-152x152.png",
+          "sizes": "152x152",
+          "type": "image/png"
+        }, {
+          "src": "/favi/favicon-196x196.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }, {
+          "src": "/favi/favicon-196x196.png",
+          "sizes": "256x256",
+          "type": "image/png"
+        }, {
+          "src": "/favi/favicon-196x196.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#000"
+  }
