@@ -6,6 +6,7 @@ module.exports = {
     colors: {
 
       'color-008000': '#008000',
+      'color-003366': '#003366',
       'blk-overlay': 'rgba(34,34,34,0.3)',
       transparent: 'transparent',
 
@@ -88,6 +89,7 @@ module.exports = {
       '5xl': '3rem',
       '6xl': '4rem',
       '7xl': '5rem',
+      '8xl': '6rem'
     },
     fontWeight: {
       hairline: '100',
@@ -253,6 +255,7 @@ module.exports = {
     },
     zIndex: {
       auto: 'auto',
+      'min1': '-1',
       '0': '0',
       '10': '10',
       '20': '20',
@@ -262,6 +265,7 @@ module.exports = {
     },
     opacity: {
       '0': '0',
+      '5': '0.05',
       '25': '0.25',
       '50': '0.5',
       '75': '0.75',

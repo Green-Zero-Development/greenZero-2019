@@ -1,7 +1,11 @@
 import styles from './../css/main.css';
-import ScrollReveal from 'scrollreveal';
 import MicroModal from 'micromodal';
 import { tns } from "tiny-slider/src/tiny-slider";
+import AOS from 'aos';
+
+AOS.init({
+    disable: 'mobile',
+});
 
 // mobile menu toggle
 
@@ -26,12 +30,6 @@ closemenu.onclick = function() {
 // init micromodal's js
 
 MicroModal.init();
-
-// END
-
-// Reveal sections on scroll
-
-ScrollReveal().reveal('.fadeOnScroll');
 
 // END
 

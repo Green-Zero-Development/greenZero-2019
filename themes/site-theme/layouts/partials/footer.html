@@ -1,17 +1,27 @@
 <style>
-  
+  .footer-business-name {
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #008000), color-stop(.5, limegreen) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #008000), color-stop(.5, limegreen) );
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 </style>
 
-<footer class="flex flex-wrap pt-5 pb-5">
-  
+<footer class="lg:absolute bottom-0 flex flex-wrap w-full pb-12">
+    <div class="flex flex-wrap w-full text-center">
+      <p class="w-full font-ibm-mono text-2xs font-ibm-mono leading-relaxed tracking-wider">&copy;  2018 - {{ now.Format "January 2, 2006" }} <span class="opacity-25"> | </span> <span class="font-bold leading-none footer-business-name">greenZero</span> development LLC</p>
+    </div>
+    <!-- <div class="w-1/2 font-ibm-mono text-sm font-thin text-left lg:text-right lg:pl-5 leading-loose">
+      {{ $currentNode := . }}
+      {{ range .Site.Menus.mobile }}
+      <a href="{{ .URL }}">
+        {{ .Name }}
+      </a>
+      <span class="text-color-008000 px-3 opacity-75">/</span>
+      {{ end }}
+      <a href="#">
+        Contracts
+      </a>
+    </div> -->
 </footer>
-
-{{ if eq .Site.Params.extra_tools.elevatorJS true }}
-
-<div id="go-to-top-button">
-  <div class="elevator-button hidegotoTop">
-      <i class="fas fa-arrow-circle-up"></i>
-  </div>
-</div>
-
-{{ else }}{{ end }}

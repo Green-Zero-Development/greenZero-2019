@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
+    "aos": "^2.3.4",
     "eventemitter3": "^3.1.0",
     "micromodal": "^0.4.0",
     "mini-css-extract-plugin": "^0.4.5",
