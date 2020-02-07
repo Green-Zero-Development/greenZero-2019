@@ -16,6 +16,7 @@ var body = document.querySelector('body');
 openmenu.onclick = function() {
   mobilemenu.classList.toggle('mobile-menu-toggle');
   body.classList.toggle('overflow-hidden');
+  body.classList.toggle('scroll-bar-jump-fix');
 }
 
 var closemenu = document.querySelector('.close-menu');
@@ -23,6 +24,7 @@ var closemenu = document.querySelector('.close-menu');
 closemenu.onclick = function() {
   mobilemenu.classList.toggle('mobile-menu-toggle');
   body.classList.toggle('overflow-hidden');
+  body.classList.toggle('scroll-bar-jump-fix');
 }
 
 // END

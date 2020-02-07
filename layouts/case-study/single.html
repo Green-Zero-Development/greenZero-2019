@@ -1,0 +1,58 @@
+{{ define "main" }}
+
+<style>
+.remediant-case-study-back {
+    background-image: url("https://res.cloudinary.com/animated-eagle/image/upload/v1581102260/greenZero/remediant-case-study.jpg")
+}
+.case-study #logo-text {
+    color: white;
+}
+.case-study .header-fixed #logo-text {
+    color: transparent;
+}
+.case-study .header-fixed .mobile-menu-icon {
+    color: #008000 !important;
+}
+.case-study .mobile-menu-icon {
+    color: white !important;
+}
+.case-study-content h6 {
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    color: #003366;
+    padding-bottom: 2px;
+}
+.case-study-content p {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: .7px;
+    line-height: 1.3;
+}
+</style>
+
+<div class="flex flex-wrap bg-cover -mt-20 pt-40 pb-32 remediant-case-study-back">
+    <div class="w-3/4 max-w-6xl mx-auto text-white text-center hero-text">
+        <h1 class="font-ibm-serif text-3.5xl sm:text-6xl font-thin tracking-tighter leading-none">We helped Remediant Inc. improve their editing process</h1>
+    </div>
+</div>
+
+<div class="flex flex-wrap bg-cover -mt-20 pt-40 pb-32">
+    <aside class="w-1/4 mx-auto font-ibm-mono text-2xs">
+        {{ .TableOfContents }}
+    </aside>
+    <article class="w-1/2 mx-auto font-ibm-serif text-3xl leading-none case-study-content">
+        {{ .Content | safeHTML }}
+    </article>
+    <aside class="w-1/4 mx-auto hero-text">
+       
+    </aside>
+</div>
+
+<div class="py-80"></div>
+<div class="py-80"></div>
+<div class="py-80"></div>
+
+
+{{ end }}

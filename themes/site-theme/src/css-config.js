@@ -7,6 +7,7 @@ module.exports = {
 
       'color-008000': '#008000',
       'color-003366': '#003366',
+      'limegreen': 'limegreen',
       'blk-overlay': 'rgba(34,34,34,0.3)',
       transparent: 'transparent',
 

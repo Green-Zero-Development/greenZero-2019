@@ -12,13 +12,13 @@ let scrollpos = window.scrollY
   const mobileIcon = document.querySelector("#mobile-menu-icon")
   const headerHeightFix = document.querySelector("#headerFloatingHeightFix")
   const headerHeight = header.offsetHeight
-  const addHeaderFloat = () => header.classList.add("fixed", "z-50", "top-0", "w-full", "bg-white", "shadow-lg")
-  const addHeaderFloatText = () => logoText.classList.add("text-3xl")
+  const addHeaderFloat = () => header.classList.add("fixed", "z-50", "top-0", "w-full", "bg-white", "shadow-lg", "header-fixed")
+  const addHeaderFloatText = () => logoText.classList.add("")
   const addHeaderMobileIcon = () => mobileIcon.classList.remove("sm:w-10")
   const addHeaderHeightFix = () => headerHeightFix.classList.add("h-16", "sm:h-24")
-  const removeHeaderFloat = () => header.classList.remove("fixed", "shadow-lg")
+  const removeHeaderFloat = () => header.classList.remove("fixed", "shadow-lg", "header-fixed")
   const removeHeaderHeightFix = () => headerHeightFix.classList.remove("h-16", "sm:h-24")
-  const removeHeaderFloatText = () => logoText.classList.remove("text-3xl")
+  const removeHeaderFloatText = () => logoText.classList.remove("")
   const removeHeaderMobileIcon = () => mobileIcon.classList.add("sm:w-10")
   window.addEventListener('scroll', function() { 
     scrollpos = window.scrollY;

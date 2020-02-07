@@ -142,3 +142,6 @@ description = "This domain is established to be used for illustrative examples i
     algolia_search = true
     font_awesome = true
     floating_header = true
+
+[markup.goldmark.renderer]
+unsafe= true
