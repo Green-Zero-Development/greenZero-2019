@@ -32,12 +32,12 @@ var st1 = window.pageYOffset || document.documentElement.scrollTop;
 const header = document.querySelector(".header-container")
 const headerHeightFix = document.querySelector("#headerFloatingHeightFix")
 const headerHeight = header.offsetHeight
-const addHeaderFloat = () => header.classList.add("fixed", "z-50", "top-0", "w-full", "bg-white", "shadow-lg", "header-fixed", "-mt-2");
+const addHeaderFloat = () => header.classList.add("fixed", "z-50", "w-full", "bg-white", "shadow-lg", "header-fixed", "-mt-2");
+const addHeaderfloatTop = () => header.style.top=st + 'px';
 const addHeaderHeightFix = () => headerHeightFix.classList.add("h-20")
-const removeHeaderFloat = () => header.classList.remove("fixed", "z-50", "top-0", "w-full", "bg-white", "shadow-lg", "header-fixed", "-mt-2");
+const removeHeaderFloat = () => header.classList.remove("fixed", "shadow-lg", "header-fixed", "-mt-2");
 const removeHeaderHeightFix = () => headerHeightFix.classList.remove("h-20")
 
-var ticking = false;
 function requestTick() {
   if (!ticking) {
     requestAnimationFrame(update);
@@ -45,48 +45,40 @@ function requestTick() {
   ticking = true;
 }
 
-function update() {
-  if (currentScrollY < lastKnownScrollY) {
-    pin();
-  } else if (currentScrollY > lastKnownScrollY) {
-    unpin();
-  }
-  lastKnownScrollY = currentScrollY;
-  ticking = false;
-}
-
 var lastScrollTop = 0;
 window.addEventListener("scroll", function(){ 
    var st = window.pageYOffset || document.documentElement.scrollTop; 
    if (st > lastScrollTop){
-     removeHeaderFloat(), removeHeaderHeightFix(), requestTick()
+     
+     header.style.top=-78 - scrollCount + 'px';
    }
    else if (st === 0){
-     removeHeaderFloat(), removeHeaderHeightFix(), requestTick()
+     removeHeaderFloat(), removeHeaderHeightFix()
    }
    else {
-     addHeaderFloat(), addHeaderHeightFix(), requestTick()
+     addHeaderFloat(), addHeaderHeightFix(),
+     header.style.top=-78 + scrollCount + 'px';
    }
    lastScrollTop = st <= 0 ? 0 : st;
 }, false);
 
-// var scrollCount = 1;
-// window.addEventListener('mousewheel', function(e){
+var scrollCount = 1;
+window.addEventListener('wheel', function(e){
 
-//   if(e.wheelDelta>0 && scrollCount<71){
-//     scrollCount++;
-//     scrollCount++;
-//     scrollCount++;
-//     scrollCount++;
-//     scrollCount++;
-//     scrollCount++;
-//     scrollCount++;
-//     scrollCount++;
-//     scrollCount++;
-//     scrollCount++;
-//     scrollCount++;
-//   }
-// });
+  if(e.deltaY>0 && scrollCount<71){
+    scrollCount++;
+    scrollCount++;
+    scrollCount++;
+    scrollCount++;
+    scrollCount++;
+    scrollCount++;
+    scrollCount++;
+    scrollCount++;
+    scrollCount++;
+    scrollCount++;
+    scrollCount++;
+  }
+});
 // var lastKnownScrollY = 0;
 // var currentScrollY = 0;
 // var ticking = false;
