@@ -38,13 +38,13 @@ var lastScrollTop = 0;
 window.addEventListener("scroll", function(){ 
    var st = window.pageYOffset || document.documentElement.scrollTop; 
    if (st > lastScrollTop){
-      removeHeaderFloat(), removeHeaderHeightFix()
+     setTimeout(function(){ removeHeaderFloat(), removeHeaderHeightFix() }, 100);
    }
    else if (st === 0){
-      removeHeaderFloat(), removeHeaderHeightFix()
+     removeHeaderFloat(), removeHeaderHeightFix()
    }
    else {
-      addHeaderFloat(), addHeaderHeightFix()
+     addHeaderFloat(), addHeaderHeightFix()
    }
    lastScrollTop = st <= 0 ? 0 : st;
 }, false);
