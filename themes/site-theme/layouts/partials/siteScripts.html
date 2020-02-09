@@ -5,26 +5,49 @@
 
 {{ if eq .Site.Params.extra_tools.floating_header true }}
 <script>
-let scrollpos = window.scrollY
-  const header = document.querySelector(".header-container")
-  const logoText = document.querySelector("#logo-text")
-  const headerButton = document.querySelector("#header-button")
-  const mobileIcon = document.querySelector("#mobile-menu-icon")
-  const headerHeightFix = document.querySelector("#headerFloatingHeightFix")
-  const headerHeight = header.offsetHeight
-  const addHeaderFloat = () => header.classList.add("fixed", "z-50", "top-0", "w-full", "bg-white", "shadow-lg", "header-fixed")
-  const addHeaderFloatText = () => logoText.classList.add("")
-  const addHeaderMobileIcon = () => mobileIcon.classList.remove("sm:w-10")
-  const addHeaderHeightFix = () => headerHeightFix.classList.add("h-16", "sm:h-24")
-  const removeHeaderFloat = () => header.classList.remove("fixed", "shadow-lg", "header-fixed")
-  const removeHeaderHeightFix = () => headerHeightFix.classList.remove("h-16", "sm:h-24")
-  const removeHeaderFloatText = () => logoText.classList.remove("")
-  const removeHeaderMobileIcon = () => mobileIcon.classList.add("sm:w-10")
-  window.addEventListener('scroll', function() { 
-    scrollpos = window.scrollY;
-    if (scrollpos >= headerHeight + 400) { addHeaderFloat(), addHeaderHeightFix(), addHeaderFloatText(), addHeaderMobileIcon() }
-    else { removeHeaderFloat(), removeHeaderHeightFix(), removeHeaderFloatText(), removeHeaderMobileIcon() }
-})
+// let scrollpos = window.scrollY
+//   const header = document.querySelector(".header-container")
+//   const logoText = document.querySelector("#logo-text")
+//   const headerButton = document.querySelector("#header-button")
+//   const mobileIcon = document.querySelector("#mobile-menu-icon")
+//   const headerHeightFix = document.querySelector("#headerFloatingHeightFix")
+//   const headerHeight = header.offsetHeight
+//   const addHeaderFloat = () => header.classList.add("fixed", "z-50", "top-0", "w-full", "bg-white", "shadow-lg", "header-fixed")
+//   const addHeaderFloatText = () => logoText.classList.add("")
+//   const addHeaderMobileIcon = () => mobileIcon.classList.remove("sm:w-10")
+//   const addHeaderHeightFix = () => headerHeightFix.classList.add("h-16", "sm:h-24")
+//   const removeHeaderFloat = () => header.classList.remove("fixed", "shadow-lg", "header-fixed")
+//   const removeHeaderHeightFix = () => headerHeightFix.classList.remove("h-16", "sm:h-24")
+//   const removeHeaderFloatText = () => logoText.classList.remove("")
+//   const removeHeaderMobileIcon = () => mobileIcon.classList.add("sm:w-10")
+//   window.addEventListener('scroll', function() { 
+//     scrollpos = window.scrollY;
+//     if (scrollpos >= headerHeight - 400) { addHeaderFloat(), addHeaderHeightFix(), addHeaderFloatText(), addHeaderMobileIcon() }
+//     else { removeHeaderFloat(), removeHeaderHeightFix(), removeHeaderFloatText(), removeHeaderMobileIcon() }
+// })
+
+const header = document.querySelector(".header-container")
+const headerHeightFix = document.querySelector("#headerFloatingHeightFix")
+const headerHeight = header.offsetHeight
+const addHeaderFloat = () => header.classList.add("fixed", "z-50", "top-0", "w-full", "bg-white", "shadow-lg", "header-fixed", "-mt-2")
+const addHeaderHeightFix = () => headerHeightFix.classList.add("h-20")
+const removeHeaderFloat = () => header.classList.remove("fixed", "shadow-lg", "header-fixed", "-mt-2")
+const removeHeaderHeightFix = () => headerHeightFix.classList.remove("h-20")
+
+var lastScrollTop = 0;
+window.addEventListener("scroll", function(){ 
+   var st = window.pageYOffset || document.documentElement.scrollTop; 
+   if (st > lastScrollTop){
+      removeHeaderFloat(), removeHeaderHeightFix()
+   }
+   else if (st === 0){
+      removeHeaderFloat(), removeHeaderHeightFix()
+   }
+   else {
+      addHeaderFloat(), addHeaderHeightFix()
+   }
+   lastScrollTop = st <= 0 ? 0 : st;
+}, false);
 </script>
 {{ else }}
 {{ end }}
