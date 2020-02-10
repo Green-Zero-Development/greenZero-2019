@@ -5,7 +5,7 @@
     transition: .1s;
 }
 .home-hero-button:hover {
-    background: #004366
+    background: limegreen
 }
 .remediant-dot-com {
     background-image: url("https://res.cloudinary.com/animated-eagle/image/upload/b_black,o_70/v1567791021/greenZero/remediant-project.jpg");
@@ -76,32 +76,18 @@ body {
     color: ;
 }
 .prefooter-background {
-    background-color: #003366;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #008000), color-stop(.5, limegreen) );
+    background-image: gradient( linear, left top, right top, color-stop(0, #008000), color-stop(.5, limegreen) );
+
+}
+.hero-section {
+    background-image: url("https://res.cloudinary.com/animated-eagle/image/upload/o_10/v1549317630/greenZero/affordable-website-development.jpg")
 }
 </style>
 
-{{ partial "utilities/slider-photos.html" . }}
-
-<script type="text/javascript">
-  var imgText = [
-       "Real Like",
-       "Congrats",
-       "High Five",
-       "Five Star",
-  ];
-  function getRandomHey() {
-    var randomIndexText = Math.floor(Math.random() * imgText.length);
-    var img = '<span class="lg:border-t-4 border-color-008000 ml-2 lg:ml-5 highlight-text">'
-    img += imgText[randomIndexText]; 
-    img += '</span> </h1>'
-    return img;
-  }
-</script>
-
-<div class="flex flex-wrap pt-32 pb-48">
+<div class="flex flex-wrap bg-cover sm:bg-fixed bg-center -mt-16 py-32 sm:py-48 hero-section">
     <div class="w-3/4 max-w-6xl mx-auto text-center hero-text">
-        <h1 class="font-ibm-serif text-3.5xl sm:text-8xl font-thin tracking-tighter leading-tight">We will optimize your web for <span class="text-color-003366 font-bold italic">{{ now.Format "January 2, 2006" }}</span></h1>
+        <h1 class="font-ibm-serif text-4xl sm:text-8xl font-thin tracking-tighter leading-tight">We will optimize your web for <span class="text-limegreen font-bold italic">{{ now.Format "January 2, 2006" }}</span></h1>
         <!-- <h2 class="font-ibm-mono text-3.5xl sm:text-5xl xxl:text-6xl tracking-wide leading-none text-center">{{ now.Format "January 2, 2006" }}</h2> -->
     </div>
 </div>
@@ -124,9 +110,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     <div class="py-72"></div>
 </div> -->
 
-<div class="flex flex-wrap m-10 shadow-xl">
+<div class="flex flex-wrap sm:-mt-12 sm:m-10 shadow-xl">
     <div class="w-full sm:w-1/2 lg:w-1/3 hover:opacity-90 hover:cursor-pointer z-20 remediant-dot-com">
-        <div class="py-20 lg:py-40"></div>
+        <div class="py-20 lg:py-32"></div>
         <div class="flex flex-wrap">
         <h6 class="w-auto bg-white font-ibm-serif text-2xs ml-5 px-1 uppercase">Improved editing experience</h6>
         <h3 class="w-full font-ibm-conds text-lg xl:text-2xl font-bold text-white pl-5 work-example-header">Remediant.com</h3>
@@ -134,7 +120,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         <div class="py-4"></div>
     </div>
     <div class="w-full sm:w-1/2 lg:w-1/3 hover:opacity-90 hover:cursor-pointer z-20 onpoint-dot-com">
-        <div class="py-20 lg:py-40"></div>
+        <div class="py-20 lg:py-32"></div>
         <div class="flex flex-wrap">
         <h6 class="w-auto bg-white font-ibm-serif text-2xs ml-5 px-1 uppercase">Sped up site & Improved editing experience</h6>
         <h3 class="w-full font-ibm-conds text-lg xl:text-2xl font-bold text-white pl-5 work-example-header">Onpointcustomhomes.com</h3>
@@ -142,7 +128,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         <div class="py-4"></div>
     </div>
     <div class="w-full lg:w-1/3 hover:opacity-90 hover:cursor-pointer z-20 femac-dot-com">
-        <div class="py-20 lg:py-40"></div>
+        <div class="py-20 lg:py-32"></div>
         <div class="flex flex-wrap">
         <h6 class="w-auto bg-white font-ibm-serif text-2xs ml-5 px-1 uppercase">Sped up site & decreased hosting costs</h6>
         <h3 class="font-ibm-conds text-lg xl:text-2xl font-bold text-white pl-5 work-example-header">femacsecuritysolutions.com</h3>
@@ -157,26 +143,26 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 <style>
     .example-background {
-        background-image: url("/pageimg/test.png");
+        background-image: url("https://res.cloudinary.com/animated-eagle/image/upload/o_10/v1549317630/greenZero/affordable-website-development.jpg");
     }
     .example-background-1 {
-        background-image: url("/pageimg/test1.png");
+        background-image: url("https://res.cloudinary.com/animated-eagle/image/upload/o_10/v1549317630/greenZero/affordable-website-development.jpg");
     }
 </style>
 
 <div class="relative flex flex-wrap -mt-56 z-10">
 
-<div class="absolute top-0 flex flex-wrap w-full bg-cover bg-top bg-no-repeat opacity-25 py-24 example-background">
+<div class="absolute top-0 flex flex-wrap w-full bg-cover bg-bottom py-24 example-background">
     <div class="py-80"></div>
 </div>
 
 <div class="absolute top-0 flex flex-wrap my-40 z-20 example-quote">
     <div class="w-5/6 lg:w-3/4 mx-auto mt-32">
-        <blockquote class="font-ibm-serif text-2xl sm:text-3xl lg:text-4xl font-thin py-8 lg:px-12 quote-home-page">greenZero helped us ditch a confusing and slow website editing process that we'd been dealing with for months. Our new website has the best of both worlds - it's quick for our users and simple for us to edit.</blockquote>
+        <blockquote class="font-ibm-serif text-xl sm:text-3xl lg:text-4xl font-thin py-8 lg:px-12 quote-home-page">greenZero helped us ditch a confusing and slow website editing process that we'd been dealing with for months. Our new website has the best of both worlds - it's quick for our users and simple for us to edit.</blockquote>
         <h6 class="font-ibm-mono lg:px-12">Tim Keeler</h6>
         <p class="font-ibm-serif font-thin text-sm pb-16 lg:px-12">Founder CEO, Remediant Inc.</p>
         <a href="" class="lg:px-12">
-            <span class="font-ibm-conds text-base font-bold hover:text-white border-b-4 border-color-003366 uppercase py-1 hover:py-2 px-2 home-hero-button">how we helped</span>
+            <span class="font-ibm-conds text-base font-bold hover:text-white border-b-4 border-color-008000 uppercase py-1 hover:py-2 px-2 home-hero-button">how we helped</span>
         </a>
     </div>
 </div>
@@ -189,28 +175,28 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 <div class="flex flex-wrap my-5 z-20 example-quote">
     <div class="w-5/6 lg:w-3/4 mx-auto mt-32">
-        <blockquote class="font-ibm-serif text-2xl sm:text-3xl lg:text-4xl font-thin py-8 lg:px-12 quote-home-page">Customers were complaining that our site was slow - we needed a fix and we needed it fast. greenZero worked with us to speed up our site and helped make our editing process less of a headache.</blockquote>
+        <blockquote class="font-ibm-serif text-xl sm:text-3xl lg:text-4xl font-thin py-8 lg:px-12 quote-home-page">Customers were complaining that our site was slow - we needed a fix and we needed it fast. greenZero worked with us to speed up our site and helped make our editing process less of a headache.</blockquote>
         <h6 class="font-ibm-mono lg:px-12">Ashley Tucker</h6>
         <p class="font-ibm-serif font-thin text-sm pb-16 lg:px-12">Founder CEO, OnPointCustomHomes</p>
         <a href="" class="lg:px-12">
-            <span class="font-ibm-conds text-base font-bold hover:text-white border-b-4 border-color-003366 uppercase py-1 hover:py-2 px-2 home-hero-button">how we helped</span>
+            <span class="font-ibm-conds text-base font-bold hover:text-white border-b-4 border-color-008000 uppercase py-1 hover:py-2 px-2 home-hero-button">how we helped</span>
         </a>
     </div>
 </div>
 
 <div class="relative flex flex-wrap z-10">
 
-<div class="absolute top-0 flex flex-wrap w-full bg-cover bg-bottom bg-no-repeat opacity-25 py-24 example-background-1">
+<div class="absolute top-0 flex flex-wrap w-full bg-cover bg-bottom py-24 example-background-1">
     <div class="py-80"></div>
 </div>
 
 <div class="absolute top-0 flex flex-wrap my-5 z-20 example-quote">
     <div class="w-5/6 lg:w-3/4 mx-auto mt-32">
-        <blockquote class="font-ibm-serif text-2xl sm:text-3xl lg:text-4xl font-thin py-8 lg:px-12 quote-home-page">greenZero helped us ditch a confusing and slow website editing process that we'd been dealing with for months. Our new website has the best of both worlds - it's quick for our users and simple for us to edit.</blockquote>
+        <blockquote class="font-ibm-serif text-xl sm:text-3xl lg:text-4xl font-thin py-8 lg:px-12 quote-home-page">greenZero helped us ditch a confusing and slow website editing process that we'd been dealing with for months. Our new website has the best of both worlds - it's quick for our users and simple for us to edit.</blockquote>
         <h6 class="font-ibm-mono lg:px-12">Tim Keeler</h6>
         <p class="font-ibm-serif font-thin text-sm pb-16 lg:px-12">Founder CEO, Remediant Inc.</p>
         <a href="" class="lg:px-12">
-            <span class="font-ibm-conds text-base font-bold hover:text-white border-b-4 border-color-003366 uppercase py-1 hover:py-2 px-2 home-hero-button">how we helped</span>
+            <span class="font-ibm-conds text-base font-bold hover:text-white border-b-4 border-color-008000 uppercase py-1 hover:py-2 px-2 home-hero-button">how we helped</span>
         </a>
     </div>
 </div>
@@ -221,37 +207,60 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     <div class="h-48"></div>
 </div>
 
-<div class="relative w-11/12 flex flex-wrap mt-12 mb-24 ml-auto pt-16 pb-20 pl-5 prefooter-background">
+<div class="relative w-full sm:w-11/12 flex flex-wrap bg-black mt-12 mb-24 ml-auto pb-5 px-5 sm:px-0 sm:pl-5 border-b-8 border-limegreen z-20">
     <div class="w-full max-w-6xl mr-auto text-left hero-text">
         <h1 class="font-ibm-serif text-3.5xl sm:text-7xl font-thin text-white tracking-tighter leading-tight">Your website should be <span class="font-bold italic underline">fast</span>, <span class="font-bold italic underline">secure</span> and <span class="font-bold italic underline">easy to edit</span></h1>
     </div>
 </div>
 
-<div class="flex flex-wrap pb-80">
-    <div class="w-1/3 mx-auto text-center">
-        <img class="w-32 mx-auto" src="https://res.cloudinary.com/animated-eagle/image/upload/v1579800092/greenZero/fast-websites.svg">
-        <h3 class="font-ibm-mono text-4xl font-thin tracking-tighter leading-tight pb-3">Quick</h3>
-        <p class="font-ibm-serif text-lg font-thin tracking-tighter leading-tight pb-3 px-32">Websites should always load fast - no exceptions. We can help make your website faster.</p>
-        <a href="" class="lg:px-12">
-            <span class="font-ibm-conds text-base font-bold hover:text-white border-b-4 border-color-003366 uppercase py-1 hover:py-2 px-2 home-hero-button">work on speed</span>
+<style>
+.fast-websites {
+    background-image: url("");
+}
+.secure-websites {
+    background-image: url("https://res.cloudinary.com/animated-eagle/image/upload/o_10/v1549317630/greenZero/affordable-website-development.jpg");
+}
+.editing-my-website-easily {
+    background-image: url("");
+}
+</style>
+
+<div class="flex flex-wrap shadow-xl -mt-48 z-0">
+    <div class="w-full sm:w-full z-0 fast-websites">
+        <div class="py-20 lg:py-32"></div>
+        <div class="flex flex-wrap w-5/6 sm:w-2/3 mx-auto pb-10">
+        <h6 class="w-auto bg-black font-ibm-serif text-2xs text-white mb-2 px-1 uppercase">Make your website faster</h6>
+        <h3 class="w-full font-ibm-conds text-lg xl:text-4xl font-bold mb-4">Websites should always load fast - no exceptions. We can help make your website faster.</h3>
+        <a href="" class="">
+            <span class="font-ibm-conds text-base font-bold hover:text-white border-b-4 border-color-008000 uppercase py-1 hover:py-2 px-2 home-hero-button">work on speed</span>
         </a>
+        </div>
     </div>
-    <div class="w-1/3 mx-auto text-center">
-        <img class="w-32 mx-auto" src="https://res.cloudinary.com/animated-eagle/image/upload/v1579800858/greenZero/secure-websites.svg">
-        <h3 class="font-ibm-mono text-4xl font-thin tracking-tighter leading-tight pb-3">Secure</h3>
-        <p class="font-ibm-serif text-lg font-thin tracking-tighter leading-tight pb-3 px-32">A website can be built with security in mind. There's no need for expensive security monitoring.</p>
-        <a href="" class="lg:px-12">
-            <span class="font-ibm-conds text-base font-bold hover:text-white border-b-4 border-color-003366 uppercase py-1 hover:py-2 px-2 home-hero-button">improve security</span>
+    <div class="w-full bg-cover bg-center z-0 secure-websites">
+        <div class="py-20 lg:py-32"></div>
+        <div class="flex flex-wrap w-5/6 sm:w-2/3 mx-auto pb-10">
+        <h6 class="w-auto bg-black font-ibm-serif text-2xs text-white mb-2 px-1 uppercase">Secure your website</h6>
+        <h3 class="w-full font-ibm-conds text-lg xl:text-4xl font-bold mb-4">A website can be built with security in mind. There's no need for expensive security monitoring.</h3>
+        <a href="" class="">
+            <span class="font-ibm-conds text-base font-bold hover:text-white border-b-4 border-color-008000 uppercase py-1 hover:py-2 px-2 home-hero-button">improve security</span>
         </a>
+        </div>
     </div>
-    <div class="w-1/3 mx-auto text-center">
-        <img class="w-32 mx-auto" src="https://res.cloudinary.com/animated-eagle/image/upload/v1579801015/greenZero/edit-websites.svg">
-        <h3 class="font-ibm-mono text-4xl font-thin tracking-tighter leading-tight pb-3">Editable</h3>
-        <p class="font-ibm-serif text-lg font-thin tracking-tighter leading-tight pb-3 px-32">Editing your website should not be difficult. We will help make the editing experience enjoyable.</p>
-        <a href="" class="lg:px-12">
-            <span class="font-ibm-conds text-base font-bold hover:text-white border-b-4 border-color-003366 uppercase py-1 hover:py-2 px-2 home-hero-button">help me edit</span>
+    <div class="w-full z-0 editing-my-website-easily">
+        <div class="py-20 lg:py-32"></div>
+        <div class="flex flex-wrap w-5/6 sm:w-2/3 mx-auto pb-16">
+        <h6 class="w-auto bg-black font-ibm-serif text-2xs text-white mb-2 px-1 uppercase">Edit your website</h6>
+        <h3 class="w-full font-ibm-conds text-lg xl:text-4xl font-bold mb-4">Editing your website should not be difficult. We will help make the editing experience enjoyable.</h3>
+        <a href="" class="">
+            <span class="font-ibm-conds text-base font-bold hover:text-white border-b-4 border-color-008000 uppercase py-1 hover:py-2 px-2 home-hero-button">help me edit</span>
         </a>
+        </div>
     </div>
+    <div class="relative w-full sm:w-11/12 flex flex-wrap bg-black mt-12 mb-24 mr-auto pb-5 px-5 sm:px-0 sm:pl-5 border-b-8 border-limegreen z-20">
+    <div class="w-full max-w-6xl mr-auto text-left hero-text">
+        <h1 class="font-ibm-serif text-3.5xl sm:text-7xl font-thin text-white tracking-tighter leading-tight">Is some other web-related problem ailing you?<a href="" class="font-bold italic underline">Click Here</a></h1>
+    </div>
+        </div>
 </div>
 
 <!-- <div class="flex flex-wrap">

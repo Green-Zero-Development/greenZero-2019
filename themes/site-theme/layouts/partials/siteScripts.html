@@ -5,30 +5,7 @@
 
 {{ if eq .Site.Params.extra_tools.floating_header true }}
 <script>
-// let scrollpos = window.scrollY
-//   const header = document.querySelector(".header-container")
-//   const logoText = document.querySelector("#logo-text")
-//   const headerButton = document.querySelector("#header-button")
-//   const mobileIcon = document.querySelector("#mobile-menu-icon")
-//   const headerHeightFix = document.querySelector("#headerFloatingHeightFix")
-//   const headerHeight = header.offsetHeight
-//   const addHeaderFloat = () => header.classList.add("fixed", "z-50", "top-0", "w-full", "bg-white", "shadow-lg", "header-fixed")
-//   const addHeaderFloatText = () => logoText.classList.add("")
-//   const addHeaderMobileIcon = () => mobileIcon.classList.remove("sm:w-10")
-//   const addHeaderHeightFix = () => headerHeightFix.classList.add("h-16", "sm:h-24")
-//   const removeHeaderFloat = () => header.classList.remove("fixed", "shadow-lg", "header-fixed")
-//   const removeHeaderHeightFix = () => headerHeightFix.classList.remove("h-16", "sm:h-24")
-//   const removeHeaderFloatText = () => logoText.classList.remove("")
-//   const removeHeaderMobileIcon = () => mobileIcon.classList.add("sm:w-10")
-//   window.addEventListener('scroll', function() { 
-//     scrollpos = window.scrollY;
-//     if (scrollpos >= headerHeight - 400) { addHeaderFloat(), addHeaderHeightFix(), addHeaderFloatText(), addHeaderMobileIcon() }
-//     else { removeHeaderFloat(), removeHeaderHeightFix(), removeHeaderFloatText(), removeHeaderMobileIcon() }
-// })
-
-// const addHeaderFloat = () => header.classList.add("fixed", "z-50", "top-0", "w-full", "bg-white", "shadow-lg", "header-fixed", "-mt-2")
 var st = window.pageYOffset || document.documentElement.scrollTop;
-var st1 = window.pageYOffset || document.documentElement.scrollTop; 
 const header = document.querySelector(".header-container")
 const headerHeightFix = document.querySelector("#headerFloatingHeightFix")
 const headerHeight = header.offsetHeight
@@ -50,55 +27,10 @@ window.addEventListener("scroll", function(){
    }
    else {
      addHeaderFloat(), addHeaderHeightFix(),
-     header.style.top=-78 + 77 + 'px';
+     header.style.top=-78 + 76 + 'px';
    }
    lastScrollTop = st <= 0 ? 0 : st;
 }, false);
-
-// var lastKnownScrollY = 0;
-// var currentScrollY = 0;
-// var ticking = false;
-// var idOfHeader = 'header';
-// var eleHeader = null;
-// const classes = {
-//   pinned: 'fixed',
-//   unpinned: 'absolute',
-// };
-// function onScroll() {
-//   currentScrollY = window.pageYOffset;
-//   requestTick();
-// }
-// function requestTick() {
-//   if (!ticking) {
-//     requestAnimationFrame(update);
-//   }
-//   ticking = true;
-// }
-// function update() {
-//   if (currentScrollY < lastKnownScrollY) {
-//     pin();
-//   } else if (currentScrollY > lastKnownScrollY) {
-//     unpin();
-//   }
-//   lastKnownScrollY = currentScrollY;
-//   ticking = false;
-// }
-// function pin() {
-//   if (eleHeader.classList.contains(classes.unpinned)) {
-//     eleHeader.classList.remove(classes.unpinned);
-//     eleHeader.classList.add(classes.pinned);
-//   }
-// }
-// function unpin() {
-//   if (eleHeader.classList.contains(classes.pinned) || !eleHeader.classList.contains(classes.unpinned)) {
-//     eleHeader.classList.remove(classes.pinned);
-//     eleHeader.classList.add(classes.unpinned);
-//   }
-// }
-// window.onload = function() {
-//   eleHeader = document.querySelector('#header');
-//   document.addEventListener('scroll', onScroll, false);
-// }
 </script>
 {{ else }}
 {{ end }}
