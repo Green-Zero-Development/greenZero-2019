@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Case Studies on Example</title>
+    <link>https://greenzero-2019.netlify.com/case-study/</link>
+    <description>Recent content in Case Studies on Example</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Apr 2019 05:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://greenzero-2019.netlify.com/case-study/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Remediant</title>
+      <link>https://greenzero-2019.netlify.com/case-study/remediant/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://greenzero-2019.netlify.com/case-study/remediant/</guid>
+      <description>            Discovery     What was causing trouble?    Discovery What was causing trouble? &amp;nbsp;
+When greenZero was brought on to help the project, Remediant was wrestling with their previous content management system Joomla. </description>
+    </item>
+    
+  </channel>
+</rss>

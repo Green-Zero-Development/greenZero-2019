@@ -5,31 +5,31 @@
     "background_color": "#008000",
     "display": "standalone",
     "scope": "/",
-    "start_url": "{{ .Site.BaseURL }}",
+    "start_url": "https://greenzero-2019.netlify.com/",
     "description": "greenZero website",
     "orientation": "any",
     "icons": [{
-        "src": "/favi/favicon-128.png",
+        "src": "https://greenzero-2019.netlify.com/favi/favicon-128.png",
           "sizes": "128x128",
           "type": "image/png"
         }, {
-          "src": "/favi/mstile-144x144.png",
+          "src": "https://greenzero-2019.netlify.com/favi/mstile-144x144.png",
           "sizes": "144x144",
           "type": "image/png"
         }, {
-          "src": "/favi/apple-touch-icon-152x152.png",
+          "src": "https://greenzero-2019.netlify.com/favi/apple-touch-icon-152x152.png",
           "sizes": "152x152",
           "type": "image/png"
         }, {
-          "src": "/favi/favicon-196x196.png",
+          "src": "https://greenzero-2019.netlify.com/favi/favicon-196x196.png",
           "sizes": "192x192",
           "type": "image/png"
         }, {
-          "src": "/favi/favicon-196x196.png",
+          "src": "https://greenzero-2019.netlify.com/favi/favicon-196x196.png",
           "sizes": "256x256",
           "type": "image/png"
         }, {
-          "src": "/favi/favicon-196x196.png",
+          "src": "https://greenzero-2019.netlify.com/favi/favicon-196x196.png",
           "sizes": "512x512",
           "type": "image/png"
         }]

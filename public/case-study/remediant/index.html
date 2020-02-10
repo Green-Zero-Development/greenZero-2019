@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title> Search - Example </title><meta name="description" content="Search this site.">
+        <title> Remediant - Example </title><meta name="description" content="Default meta desciption for the page.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="viewport" content="width=device-width,minimum-scale=1">
@@ -68,21 +68,21 @@
 {
   "@context": "http://schema.org",
   "@type": "WebPage",
-  "headline": "Search",
-  "description": "Search this site.",
+  "headline": "Remediant",
+  "description": "Default meta desciption for the page.",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https:\/\/greenzero-2019.netlify.com\/search\/"
+    "@id": "https:\/\/greenzero-2019.netlify.com\/case-study\/remediant\/"
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https:\/\/greenzero-2019.netlify.com\/"
+    "url": "https:\/\/greenzero-2019.netlify.com\/INPUT URL TO PHOTO THAT DESCRIBES THE PAGE"
   },
-  "genre": "page",
+  "genre": "case-study",
   
-  "url": "https:\/\/greenzero-2019.netlify.com\/search\/",
-  "datePublished": "2019-05-19T05:00:00",
-  "dateModified": "2019-05-19T05:00:00",
+  "url": "https:\/\/greenzero-2019.netlify.com\/case-study\/remediant\/",
+  "datePublished": "2019-04-24T05:00:00",
+  "dateModified": "2019-04-24T05:00:00",
   "publisher": {
     "@type": "Organization",
     "name": "Example",
@@ -95,7 +95,7 @@
 }
 </script>
 
-<body class="relative body-wrapper ">
+<body class="relative body-wrapper case-study">
 
 <style>
 .header-container {
@@ -204,105 +204,89 @@
 <main role="main">
 
 
-
-
-<section id="search-section" class="relative bg-white m-0">
-
-<div id="menuSelect"></div>
-
-<div id="searchbox" class="flex flex-wrap"></div>
-
-<div id="hits"></div>
-<div id="pagination"></div>
-
-<script type="text/html" id="hit-template">
-    <a class="no-underline" href="#" onclick="window.location=&#34;{{{ url }}}&#34;">
-  <div class="p-4 m-4 bg-white hit">
-    <div class="text-center hit-content">
-      <h2 class="text-2xl font-semibold m-0 pb-2 leading-tight hit-name">{{{ title }}}</h2>
-      <p class="text-lg font-thin m-0">{{{ excerpt }}}</p>
-    </div>
-  </div>
-</a>
-</script>
-
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.32.1/dist/algoliasearchLite.js" integrity="sha256-pMaJf0I78weeXGkRMBDO6jSulxC/q3sb0aPdtV2N8n0=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.2.0" integrity="sha256-/8usMtTwZ01jujD7KAZctG0UMk2S2NDNirGFVBbBZCM=" crossorigin="anonymous"></script>
-
-<script>
-const searchClient = algoliasearch('', '');
-
-const search = instantsearch({
-  indexName: '',
-  searchClient,
-});
-
-search.addWidget(
-    instantsearch.widgets.searchBox({
-    container: "#searchbox",
-    placeholder: "Search",
-    cssClasses: {
-      root: 'flex flex-wrap w-full',
-      form: 'flex flex-wrap w-full',
-      input: 'w-4/5 mx-auto p-3 mb-2 text-2xl bg-gray-300 text-black rounded-lg outline-none',
-      submitIcon: 'hidden',
-      resetIcon: 'hidden',
-    },
-  }),
-);
-
-search.addWidget(
-    instantsearch.widgets.hits({
-  container: '#hits',
-  templates: {
-    item: document.getElementById('hit-template').innerHTML,
-    empty: "We didn't find any results for the search <em>\"{{{ query }}}\"</em>"
-  },
-  cssClasses: {
-      list: "flex flex-wrap list-reset",
-      emptyRoot: "text-center py-8 text-xl",
-      item: "w-full lg:w-4/5 mx-auto border-t-2 border-b-2 hover:border-rem-red"
-  }
-})
-);
-
-search.addWidget(
-    instantsearch.widgets.pagination({
-  container: '#pagination',
-  cssClasses: {
-    list: "flex items-center py-8 m-0 border-b-4 list-reset text-center",
-    empty: "something",
-    item: "w-1/5 text-white",
-    link: "no-underline text-gray-600 hover:text-black",
-    pageItem: "text-xl",
-    firstPageItem: "text-3xl",
-    lastPageItem: "text-3xl",
-    previousPageItem: "text-3xl",
-    nextPageItem: "text-3xl",
-    disabledItem: "opacity-50"
+<style>
+.remediant-case-study-back {
+    background-image: url("https://res.cloudinary.com/animated-eagle/image/upload/v1581102260/greenZero/remediant-case-study.jpg")
 }
-})
-);
+.case-study #logo-text {
+    color: white;
+}
+.case-study .header-fixed #logo-text {
+    color: transparent;
+}
+.case-study .header-fixed .mobile-menu-icon {
+    color: #008000 !important;
+}
+.case-study .mobile-menu-icon {
+    color: white !important;
+}
+.case-study-content h6 {
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    color: #003366;
+    padding-bottom: 2px;
+}
+.case-study-content p {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: .7px;
+    line-height: 1.3;
+}
+</style>
 
-search.addWidget(
-instantsearch.widgets.menuSelect({
-  container: '#menuSelect',
-  attribute: 'type',
-  templates: {
-    defaultOption: 'search by category..',
-},
-cssClasses: {
-      root: 'flex flex-wrap w-full',
-      select: 'w-4/5 mx-auto p-3 mb-2 text-lg bg-gray-300 text-black rounded-lg outline-none',
-    },
-})
-);
+<div class="flex flex-wrap bg-cover -mt-20 pt-40 pb-32 remediant-case-study-back">
+    <div class="w-3/4 max-w-6xl mx-auto text-white text-center hero-text">
+        <h1 class="font-ibm-serif text-3.5xl sm:text-6xl font-thin tracking-tighter leading-none">We helped Remediant Inc. improve their editing process</h1>
+    </div>
+</div>
 
-search.start();
-</script>
+<div class="flex flex-wrap -mt-20 pt-40 pb-32">
+    <aside class="w-1/4 mx-auto font-ibm-mono text-2xs">
+        
+    </aside>
+    <div class="w-1/2 mx-auto font-ibm-serif text-3xl leading-none case-study-content">
+        <nav>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#discovery">Discovery</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#what-was-causing-trouble">What was causing trouble?</a></li>
+</ul></li>
+</ul>
+</nav>
 
+<h6 id="discovery">Discovery</h6>
+
+<h2 id="what-was-causing-trouble">What was causing trouble?</h2>
+
+<p>&nbsp;</p>
+
+<p>When greenZero was brought on to help the project, Remediant was wrestling with their previous content management system Joomla.
+</p>
+
+    </div>
+    <aside class="w-1/4 mx-auto hero-text">
+       
+    </aside>
+</div>
+
+<div class="py-80"></div>
+<div class="py-80"></div>
+<div class="py-80"></div>
 
 
 

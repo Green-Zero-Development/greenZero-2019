@@ -10,5 +10,4 @@ meta_description = "Default meta desciption for the page."
 ## What was causing trouble?
 &nbsp;
 
-When greenZero was brought on to help the project, Remediant was wrestling with their previous content management system Joomla.
-\
+When greenZero was brought on to help the project, Remediant was wrestling with their previous content management system. The 
