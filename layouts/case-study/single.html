@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <style>
-.remediant-case-study-back {
+.case-study-heading-background {
     background-image: url("{{ .Page.Params.publish_image }}")
 }
 .case-study #logo-text {
@@ -47,26 +47,23 @@
 }
 </style>
 
-<div class="flex flex-wrap bg-cover -mt-20 pt-40 pb-32 remediant-case-study-back">
-    <div class="w-3/4 max-w-6xl mx-auto text-white text-center hero-text">
-        <h1 class="font-ibm-serif text-3.5xl sm:text-6xl font-thin tracking-tighter leading-none">{{ .Page.Params.meta_description}}</h1>
+<div class="flex flex-wrap bg-cover -mt-20 pt-40 pb-32 case-study-heading-background">
+    <div class="w-5/6 xs:w-3/4 max-w-6xl mx-auto text-white text-center hero-text">
+        <h1 class="font-ibm-serif text-3.5xl sm:text-5xl lg:text-6xl font-thin tracking-tighter leading-none">{{ .Page.Params.meta_description}}</h1>
     </div>
 </div>
 
 <div class="flex flex-wrap -mt-20 pt-40 pb-32">
-    <!-- <aside class="w-1/4 mx-auto text-right font-ibm-mono text-2xs pr-12">
-        {{ .TableOfContents | replaceRE "<a" "<a class='scroll'" | safeHTML }}
-    </aside> -->
-    <div class="w-1/2 mx-auto font-ibm-serif text-3xl leading-none case-study-content">
+    <div class="w-5/6 md:w-2/3 lg:w-1/2 mx-auto font-ibm-serif text-3xl leading-none case-study-content">
         {{ .Content }}
     </div>
 </div>
 
-<div class="relative w-11/12 flex flex-wrap mb-32 mr-auto pb-5 pl-5 border-t-8 border-b-8 border-limegreen z-20">
+<a href="/general-contact/" class="relative w-11/12 flex flex-wrap mb-32 mr-auto pb-5 pl-5 border-t-8 border-b-8 border-limegreen z-20">
     <div class="w-full max-w-6xl mr-auto text-left hero-text">
-        <h1 class="font-ibm-serif text-5xl sm:text-7xl font-thin tracking-tighter leading-tight">Want to learn more about how we help our clients?<a href="" class="font-bold italic underline">Click Here</a></h1>
+        <h5 class="font-ibm-serif text-4xl xs:text-5xl md:text-7xl font-thin tracking-tighter leading-tight">Think we can help your business? <span class="font-bold italic underline">click here</span></h5>
     </div>
-</div>
+</a>
 
 <div class="h-1"></div>
 

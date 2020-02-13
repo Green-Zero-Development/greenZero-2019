@@ -2,7 +2,7 @@
 date = "2019-04-24T05:00:00+00:00"
 title = "FEMAC"
 page_status = "case-study"
-publish_image = "https://res.cloudinary.com/animated-eagle/image/upload/v1567791788/greenZero/femac-project.jpg"
+publish_image = "https://res.cloudinary.com/animated-eagle/image/upload/b_black,o_50/v1567791788/greenZero/femac-project.jpg"
 meta_description = "We reduced FEMAC's hosting costs AND sped up their site."
 +++
 

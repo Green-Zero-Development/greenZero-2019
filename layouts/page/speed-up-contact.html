@@ -1,0 +1,95 @@
+{{ define "main" }}
+
+<style>
+
+.header-fixed {
+    position: absolute !important;
+}
+</style>
+
+<div class="flex flex-wrap bg-cover sm:bg-fixed bg-center -mt-16 pt-56 pb-32 hero-section">
+    <div class="w-5/6 sm:w-3/4 max-w-6xl mx-auto text-center hero-text">
+        <h1 class="font-ibm-serif text-4xl xs:text-5xl md:text-7xl xxl:text-8xl font-thin tracking-tighter leading-tight">Your customers expect your website to load fast <span class="text-limegreen font-bold italic">let's make that happen!</span></h1>
+    </div>
+</div>
+
+<div class="flex flex-wrap bg-black z-20">
+    <div class="flex flex-wrap w-5/6 lg:w-2/3 xl:w-1/2 max-w-3xl mx-auto font-ibm-serif pt-20 pb-32">
+        <h2 class="w-full text-2xl sm:text-3xl lg:text-4xl font-bold text-white py-8 leading-none">Folks with faster load speed benefit from all these great things:</h2>
+        <ul class="flex flex-wrap">
+            <li class="flex w-auto bg-white p-3 mb-2 mr-2 rounded-lg">
+                <p class="text-xl">Higher customer retention</p>
+                <i class="text-limegreen fas fa-check"></i>
+            </li>
+            <li class="flex w-auto bg-white p-3 mb-2 mr-2 rounded-lg">
+                <p class="text-xl">Better page ranking</p>
+                <i class="text-limegreen fas fa-check"></i>
+            </li>
+            <li class="flex w-auto bg-white p-3 mb-2 mr-2 rounded-lg">
+                <p class="text-xl">Less hosting costs</p>
+                <i class="text-limegreen fas fa-check"></i>
+            </li>
+            <li class="flex w-auto bg-white p-3 mb-2 mr-2 rounded-lg">
+                <p class="text-xl">And more</p>
+                <i class="text-limegreen fas fa-check"></i>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="w-full flex flex-wrap mb-32 mr-auto pt-24 pb-8 pl-5 border-t-8 border-limegreen z-20">
+    <div class="w-full max-w-6xl mx-auto hero-text">
+        <h3 class="font-ibm-serif text-4xl xs:text-5xl md:text-6xl font-thin tracking-tighter leading-tight">Let's improve your website's load time <span class="font-bold italic underline">together</span></h3>
+    </div>
+</div>
+
+<form class="flex flex-wrap w-5/6 max-w-6xl mx-auto font-ibm-serif pb-40" action="/thank-you/" netlify-honeypot="field-for-coolguys" name="" method="POST" netlify>
+    <input type="hidden" name="subject" value="New Submission from Website" />
+    <div class="flex flex-wrap w-full md:w-1/2 lg:w-1/4 mb-16">
+        <label class="w-11/12 mr-auto text-3xl font-bold">Name*</label>
+        <input class="w-11/12 mr-auto py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen" name="name" type="text" placeholder="Who are you?" required>
+    </div>
+    <div class="flex flex-wrap w-full md:w-1/2 lg:w-1/4 mb-16">
+        <label class="w-11/12 mr-auto text-3xl font-bold">Company</label>
+        <input class="w-11/12 mr-auto py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen" name="last-name" type="text" placeholder="What is your company's name?">
+    </div>
+    <div class="flex flex-wrap w-full md:w-1/2 lg:w-1/4 mb-16">
+        <label class="w-11/12 mr-auto text-3xl font-bold">Email*</label>
+        <input class="w-11/12 mr-auto py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen" name="email" type="email" placeholder="Which email can we reach you at?" required>
+    </div>
+    <input type="text" name="field-for-coolguys" style="display:none" />
+    <div class="flex flex-wrap w-full md:w-1/2 lg:w-1/4 mb-16">
+        <label class="w-11/12 mr-auto text-3xl font-bold">Phone*</label>
+        <input class="w-11/12 mr-auto py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen" name="phone" type="tel" placeholder="What number can we reach you at?" required>
+    </div>
+    <div class="flex flex-wrap w-full md:w-1/2 mb-16">
+        <label class="w-11/12 mr-auto text-3xl font-bold">Website</label>
+        <input class="w-11/12 mr-auto py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen" name="phone" type="tel" placeholder="Your current website's URL">
+    </div>
+    <div class="flex flex-wrap items-start w-full md:w-1/2 mb-16">
+        <label class="w-11/12 mr-auto text-3xl font-bold">How can we help? *</label>
+        <select class="w-11/12 mr-auto py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen">
+            <option value="Speed up my website" selected>Speed up my website</option>
+            <option value="Improve my website's security">Secure my website</option>
+            <option value="Improve website editing tools">Improve my website's editing tools</option>
+            <option value="Something else">Something else</option>
+        </select required>
+    </div>
+    <div class="flex flex-wrap w-full mb-16">
+        <label class="w-11/12 mr-auto text-3xl font-bold">I need help with...</label>
+        <textarea class="w-11/12 mr-auto h-32 py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen" name="details" placeholder="Tell us what you need help with. Be as detailed as possible."></textarea>
+    </div>
+    <div class="">
+        <input class="font-ibm-conds bg-limegreen text-base font-bold text-white text-white border-b-4 border-color-008000 uppercase py-2 px-2 hover:cursor-pointer home-hero-button" type="submit" value="Submit" class="">
+    </div>
+</form>
+
+<a href="/case-study/" class="relative w-11/12 flex flex-wrap max-w-6xl mb-32 mx-auto pb-5 pl-5 border-t-8 border-b-8 border-limegreen z-20">
+    <div class="w-full max-w-6xl mr-auto text-left">
+        <h5 class="font-ibm-serif text-4xl xs:text-5xl md:text-6xl font-thin tracking-tighter leading-tight">Find out how we've helped our clients <span class="font-bold italic underline">click here</span></h5>
+    </div>
+</a>
+
+<div class="py-5"></div>
+
+{{ end }}
