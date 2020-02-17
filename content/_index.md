@@ -6,5 +6,5 @@ url = "/"
 title = "Home"
 page_status = "home"
 publish_image = "INPUT URL TO PHOTO THAT DESCRIBES THE PAGE"
-meta_description = "Default meta desciption for the page."
+meta_description = ""
 +++

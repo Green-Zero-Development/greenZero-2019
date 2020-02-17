@@ -1,11 +1,4 @@
 import styles from './../css/main.css';
-import MicroModal from 'micromodal';
-import { tns } from "tiny-slider/src/tiny-slider";
-import AOS from 'aos';
-
-AOS.init({
-    disable: 'mobile',
-});
 
 // mobile menu toggle
 
@@ -25,13 +18,7 @@ closemenu.onclick = function() {
   mobilemenu.classList.toggle('mobile-menu-toggle');
   body.classList.toggle('overflow-hidden');
   body.classList.toggle('scroll-bar-jump-fix');
-}
-
-// END
-
-// init micromodal's js
-
-MicroModal.init();
+};
 
 // END
 
@@ -66,20 +53,5 @@ function scrollAnchors(e, respond = null) {
 }
 
 // END
-
-// Sliders
-
-var slider = tns({
-  "container": "#homepage-slider-images",
-  "nav": true,
-  "items": 1,
-  "controlsContainer": "#slider-controls",
-  "swipeAngle": false,
-  "center": true,
-  "mouseDrag": true,
-  "mode": "gallery",
-  "autoplay": false,
-  "navPosition": "bottom"
-});
 
 // END

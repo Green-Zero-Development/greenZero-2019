@@ -1,40 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Example</title>
+    <title>Pages on Green Zero Development</title>
     <link>https://greenzero-2019.netlify.com/pages/</link>
-    <description>Recent content in Pages on Example</description>
+    <description>Recent content in Pages on Green Zero Development</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 May 2019 05:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Apr 2019 05:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://greenzero-2019.netlify.com/pages/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Search</title>
-      <link>https://greenzero-2019.netlify.com/search/</link>
-      <pubDate>Sun, 19 May 2019 05:00:00 +0000</pubDate>
+      <title>Ask a question</title>
+      <link>https://greenzero-2019.netlify.com/general-contact/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
       
-      <guid>https://greenzero-2019.netlify.com/search/</guid>
+      <guid>https://greenzero-2019.netlify.com/general-contact/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Examples of development elements</title>
-      <link>https://greenzero-2019.netlify.com/devele/</link>
+      <title>Better editing tools for my website</title>
+      <link>https://greenzero-2019.netlify.com/better-editing-tools-for-website/</link>
       <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
       
-      <guid>https://greenzero-2019.netlify.com/devele/</guid>
+      <guid>https://greenzero-2019.netlify.com/better-editing-tools-for-website/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>INSERT PAGE TITLE HERE</title>
-      <link>https://greenzero-2019.netlify.com/insert-url-here/</link>
+      <title>Free Site Review</title>
+      <link>https://greenzero-2019.netlify.com/free-site-review/</link>
       <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
       
-      <guid>https://greenzero-2019.netlify.com/insert-url-here/</guid>
+      <guid>https://greenzero-2019.netlify.com/free-site-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Securing a website</title>
+      <link>https://greenzero-2019.netlify.com/secure-website/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://greenzero-2019.netlify.com/secure-website/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Speeding up a website</title>
+      <link>https://greenzero-2019.netlify.com/speed-up-website/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://greenzero-2019.netlify.com/speed-up-website/</guid>
       <description></description>
     </item>
     

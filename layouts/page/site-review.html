@@ -9,28 +9,32 @@
 
 <div class="flex flex-wrap bg-cover sm:bg-fixed bg-center -mt-16 pt-48 pb-32 hero-section">
     <div class="w-5/6 sm:w-3/4 max-w-6xl mx-auto text-center hero-text">
-        <h1 class="font-ibm-serif text-4xl xs:text-5xl md:text-6xl font-thin tracking-tighter leading-tight">Editing your website should always be <span class="text-limegreen font-bold italic">easy and hassle-free!</span></h1>
+        <h1 class="font-ibm-serif text-4xl xs:text-5xl md:text-6xl font-thin tracking-tighter leading-tight">Not sure what you need help with? <span class="text-limegreen font-bold italic">We'll review your site for free!</span></h1>
     </div>
 </div>
 
 <div class="flex flex-wrap bg-black z-20">
     <div class="flex flex-wrap w-5/6 lg:w-2/3 xl:w-1/2 max-w-3xl mx-auto font-ibm-serif pt-8 pb-20">
-        <h2 class="w-full text-2xl font-bold text-white py-8 leading-none">Improving your editing tools can help you take advantage of these benefits:</h2>
+        <h2 class="w-full text-2xl font-bold text-white py-8 leading-none">You can expect a few things included in your review:</h2>
         <ul class="flex flex-wrap">
             <li class="flex w-auto bg-white p-3 mb-2 mr-2 rounded-lg">
-                <p class="text-sm md:text-base">Clear and concise editing process</p>
+                <p class="text-sm md:text-base">A speed report (how fast do your most important pages load?)</p>
                 <i class="text-limegreen fas fa-check"></i>
             </li>
             <li class="flex w-auto bg-white p-3 mb-2 mr-2 rounded-lg">
-                <p class="text-sm md:text-base">Simple content scheduling</p>
+                <p class="text-sm md:text-base">Some security tips (if applicable)</p>
                 <i class="text-limegreen fas fa-check"></i>
             </li>
             <li class="flex w-auto bg-white p-3 mb-2 mr-2 rounded-lg">
-                <p class="text-sm md:text-base">Expandability for future business development</p>
+                <p class="text-sm md:text-base">SEO suggestions</p>
                 <i class="text-limegreen fas fa-check"></i>
             </li>
             <li class="flex w-auto bg-white p-3 mb-2 mr-2 rounded-lg">
-                <p class="text-sm md:text-base">And more</p>
+                <p class="text-sm md:text-base">Mobile optimization recommendations</p>
+                <i class="text-limegreen fas fa-check"></i>
+            </li>
+            <li class="flex w-auto bg-white p-3 mb-2 mr-2 rounded-lg">
+                <p class="text-sm md:text-base">and more...</p>
                 <i class="text-limegreen fas fa-check"></i>
             </li>
         </ul>
@@ -39,12 +43,12 @@
 
 <div class="w-full flex flex-wrap mb-32 mr-auto pt-40 border-t-8 border-limegreen z-20">
     <div class="w-5/6 max-w-6xl mx-auto hero-text">
-        <h3 class="font-ibm-serif text-3xl md:text-4xl font-thin tracking-tighter leading-tight">Let's organize your website's editing process <span class="font-bold italic underline">together</span></h3>
+        <h3 class="font-ibm-serif text-3xl md:text-4xl font-thin tracking-tighter leading-tight">Show us your website and we'll put together some <span class="font-bold italic underline">helpful tips</span></h3>
     </div>
 </div>
 
 <form class="flex flex-wrap w-5/6 max-w-6xl mx-auto font-ibm-serif pb-40" action="/thank-you/" netlify-honeypot="field-for-coolguys" name="" method="POST" netlify>
-    <input type="hidden" name="subject" value="(Request) Editing Tools Page" />
+    <input type="hidden" name="subject" value="Site Review Request" />
     <div class="flex flex-wrap w-full md:w-1/2 lg:w-1/4 mb-16">
         <label class="w-11/12 mr-auto text-3xl font-bold">Name*</label>
         <input class="w-11/12 mr-auto py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen" name="name" type="text" placeholder="Who are you?" required>
@@ -63,21 +67,21 @@
         <input class="w-11/12 mr-auto py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen" name="phone" type="tel" placeholder="What number can we reach you at?" required>
     </div>
     <div class="flex flex-wrap w-full md:w-1/2 mb-16">
-        <label class="w-11/12 mr-auto text-3xl font-bold">Website</label>
-        <input class="w-11/12 mr-auto py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen" name="website" type="text" placeholder="Your current website's URL">
+        <label class="w-11/12 mr-auto text-3xl font-bold">Website*</label>
+        <input class="w-11/12 mr-auto py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen" name="website" type="text" placeholder="Your current website's URL" required>
     </div>
     <div class="flex flex-wrap items-start w-full md:w-1/2 mb-16">
-        <label class="w-11/12 mr-auto text-3xl font-bold">How can we help? *</label>
-        <select name="how-can-we-help" class="w-11/12 mr-auto py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen">
-            <option value="Speed up my website">Speed up my website</option>
-            <option value="Improve my website's security">Secure my website</option>
-            <option value="Improve website editing tools" selected>Improve my website's editing tools</option>
-            <option value="Something else">Something else</option>
+        <label class="w-11/12 mr-auto text-3xl font-bold">What should our review focus on?*</label>
+        <select name="what-should-review-focus-on" class="w-11/12 mr-auto py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen">
+            <option value="Website speed">Website speed</option>
+            <option value="Security tips">Security tips</option>
+            <option value="SEO suggestions">SEO suggestions</option>
+            <option value="No focus required" selected>No focus in particular</option>
         </select required>
     </div>
     <div class="flex flex-wrap w-full mb-16">
-        <label class="w-11/12 mr-auto text-3xl font-bold">I need help with...</label>
-        <textarea class="w-11/12 mr-auto h-32 py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen" name="details" placeholder="Tell us what you need help with. Be as detailed as possible."></textarea>
+        <label class="w-11/12 mr-auto text-3xl font-bold">Additional Details...</label>
+        <textarea class="w-11/12 mr-auto h-32 py-2 border-b-4 border-black hover:border-limegreen focus:border-limegreen" name="details" placeholder="Is there anything we should know about your site before we begin our review?"></textarea>
     </div>
     <div class="">
         <input class="font-ibm-conds bg-limegreen text-base font-bold text-white text-white border-b-4 border-color-008000 uppercase py-2 px-2 hover:cursor-pointer home-hero-button" type="submit" value="Submit" class="">

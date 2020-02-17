@@ -6,5 +6,5 @@ url = "/general-contact/"
 title = "Ask a question"
 page_status = "general-contact"
 publish_image = "INPUT URL TO PHOTO THAT DESCRIBES THE PAGE"
-meta_description = "Default meta desciption for the page."
+meta_description = "Ask us a question about our services or our process."
 +++

@@ -10,13 +10,7 @@
         {{ partial "head/faviCode.html" . }}
         {{ partial "head/globalStyle.html" . }}
         {{ partial "head/rss.html" . }}
-        {{ partial "head/fontAwesome.html" . }}
         {{ partial "head/googleAnalytics.html" . }}
-        <link rel="manifest" href="/manifest.json">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="greenZero PWA">
-        <meta name="theme-color" content="#2F3BA2" />
     </head>
 
 {{ partial "head/siteSchema" . }}
@@ -31,15 +25,9 @@
 
 {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
 
-{{ block "scripts" . }}{{ partial "siteScripts.html" . }}{{ end }}
+{{ partial "head/fontAwesome.html" . }}
 
-<script>
- if (!navigator.serviceWorker.controller) {
-     navigator.serviceWorker.register("/service-worker.js").then(function(reg) {
-         console.log("Service worker has been registered for scope: " + reg.scope);
-     });
- }
-</script>
+{{ block "scripts" . }}{{ partial "siteScripts.html" . }}{{ end }}
 
 </body>
 </html>

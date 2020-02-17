@@ -6,5 +6,5 @@ url = "/speed-up-website/"
 title = "Speeding up a website"
 page_status = "speed-up-website"
 publish_image = "INPUT URL TO PHOTO THAT DESCRIBES THE PAGE"
-meta_description = "Default meta desciption for the page."
+meta_description = "Let us help speed up your website for maximum customer retention."
 +++

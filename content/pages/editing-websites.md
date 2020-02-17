@@ -6,5 +6,5 @@ url = "/better-editing-tools-for-website/"
 title = "Better editing tools for my website"
 page_status = "better-editing-tools-for-website"
 publish_image = "INPUT URL TO PHOTO THAT DESCRIBES THE PAGE"
-meta_description = "Default meta desciption for the page."
+meta_description = "We can help get the tools you need to make editing your website easy and hassle-free."
 +++

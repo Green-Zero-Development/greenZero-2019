@@ -5,5 +5,5 @@ layout = "case-study-listing"
 title = "Case Studies"
 page_status = "case-study-listing"
 publish_image = "INPUT URL TO PHOTO THAT DESCRIBES THE PAGE"
-meta_description = "Default meta desciption for the page."
+meta_description = "How we helped clients improve their websites."
 +++

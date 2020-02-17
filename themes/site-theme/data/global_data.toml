@@ -1,0 +1,16 @@
+[contact_numbers]
+phone = "(912) 712-6692"
+[meta]
+description = "Improve your website's performance, security and editing tools with a development partner who won't abandon you."
+[params.email]
+email = "admin@greenzero.us"
+[social]
+facebook = ""
+instagram = ""
+[tracking]
+google_analytics = "UA-133751560-1"
+[params.address]
+city = "Statesboro"
+state = "GA"
+street = "19 Courtland Street"
+zip = 30458
