@@ -45,7 +45,7 @@ enableRobotsTXT = true
 [params.tracking]
     cloudinary_url = ""
 [params.publishing_settings]
-    site_in_production = false
+    site_in_production = true
 
 [mediaTypes]
   [mediaTypes."text/noExt"]
