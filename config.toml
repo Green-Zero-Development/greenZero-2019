@@ -70,11 +70,6 @@ enableRobotsTXT = true
         isPlainText = false
         mediaType = "application/xml"
         path = "/"
-    [outputFormats.redirects]
-        baseName = "_redirects"
-        isPlainText = true
-        mediaType = "text/noExt"
-        path = "/"
     [outputFormats.Algolia]
         baseName = "algolia"
         isPlainText = true
@@ -82,7 +77,7 @@ enableRobotsTXT = true
         notAlternative = true
 
 [outputs]
-  home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS", "redirects", "Algolia"]
+  home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS", "Algolia"]
 
 [params.algolia]
     appId = ""
