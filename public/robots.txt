@@ -4,4 +4,4 @@ Disallow: /
 
 
 
-Sitemap: https://greenzero-2019.netlify.com/sitemapindex.xml
+Sitemap: https://www.greenzero.us/sitemapindex.xml
