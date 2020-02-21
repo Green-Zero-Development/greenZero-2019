@@ -11,7 +11,7 @@
   },
   {{- end }}
   {{ if .Site.Data.global_data.meta.description -}}
-  "description": "{{ .Site.Data.global_data.meta.description }}",
+  "description": "{{ .Site.Data.global_data.meta.description | htmlUnescape }}",
   {{- end }}
   {{ with .Site.Params.image -}}
   "image": "{{ .url | absURL }}",
