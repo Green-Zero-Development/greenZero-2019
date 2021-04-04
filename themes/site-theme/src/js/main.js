@@ -1,4 +1,7 @@
 import styles from './../css/main.css';
+import kwesforms from 'kwesforms';
+
+kwesforms.init();
 
 // mobile menu toggle
 
