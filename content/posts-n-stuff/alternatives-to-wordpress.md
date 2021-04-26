@@ -1,12 +1,11 @@
 +++
-date = "2019-04-24T05:00:00+00:00"
-title = "FEMAC"
-website_url = "femacsecuritysolutions.com"
-improvements = ["Sped up site", "decreased hosting costs"]
-page_status = "case-study"
-listing_image = "https://res.cloudinary.com/animated-eagle/image/upload/b_black,o_90/v1567791788/greenZero/femac-project.jpg"
-publish_image = "https://res.cloudinary.com/animated-eagle/image/upload/b_black,o_50/v1567791788/greenZero/femac-project.jpg"
-meta_description = "We reduced FEMAC's hosting costs AND provided affordable website edits."
+date = "2020-03-02T05:00:00+00:00"
+title = "Remediant"
+tags = ["Improved editing experience"]
+page_status = "post"
+listing_image = "https://res.cloudinary.com/animated-eagle/image/upload/b_black,o_70/v1583167329/greenZero/to-wordpress-or-not-to-wordpress.jpg"
+publish_image = "https://res.cloudinary.com/animated-eagle/image/upload/b_black,o_50/v1583167329/greenZero/to-wordpress-or-not-to-wordpress.jpg"
+meta_description = "We helped Remediant Inc improve their editing process"
 +++
 
 ###### Discovery

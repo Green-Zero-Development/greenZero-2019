@@ -5,6 +5,7 @@ kwesforms.init();
 
 // mobile menu toggle
 
+let logo = document.getElementById('logo-img');
 var openmenu = document.querySelector('.mobile-menu-button');
 var mobilemenu = document.querySelector('.mobile-menu');
 var body = document.querySelector('body');
@@ -24,6 +25,10 @@ closemenu.onclick = function() {
 };
 
 // END
+
+if (body.classList.contains('case-study')) {
+	logo.src = "https://res.cloudinary.com/animated-eagle/image/upload/v1619460764/greenZero/greenzero-logo-inverted-rgb-white-svg.svg"
+}
 
 // Scroll anchor links
 

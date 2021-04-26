@@ -1,7 +1,10 @@
 +++
 date = "2019-04-24T05:00:00+00:00"
 title = "Remediant"
+website_url = "Remediant.com"
+improvements = ["Improved editing experience"]
 page_status = "case-study"
+listing_image = "https://res.cloudinary.com/animated-eagle/image/upload/b_black,o_70/v1567791021/greenZero/remediant-project.jpg"
 publish_image = "https://res.cloudinary.com/animated-eagle/image/upload/v1581102260/greenZero/remediant-case-study.jpg"
 meta_description = "We helped Remediant Inc improve their editing process"
 +++

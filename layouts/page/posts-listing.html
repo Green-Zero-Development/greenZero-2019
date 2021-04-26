@@ -2,22 +2,22 @@
 
 <div class="flex flex-wrap bg-cover sm:bg-fixed bg-center -mt-16 pt-56 pb-40 sm:py-48 hero-section">
     <div class="w-5/6 sm:w-3/4 max-w-6xl mx-auto text-center hero-text">
-        <h1 class="font-ibm-serif text-5xl sm:text-8xl font-thin tracking-tighter leading-tight">We helped these guys <span class="text-limegreen font-bold italic">we can help you too!</span></h1>
+        <h1 class="font-ibm-serif text-5xl sm:text-8xl font-thin tracking-tighter leading-tight">Learn how the web is built <span class="text-limegreen font-bold italic">and other things too!</span></h1>
     </div>
 </div>
 
 <div class="flex flex-wrap pb-24">
-    {{ range (where .Site.Pages "Type" "case-study") }}
+    {{ range (where .Site.Pages "Type" "posts-n-stuff") }}
     <style>
-        .case-study-image-{{ .File.TranslationBaseName | urlize }} {
+        .post-listing-image-{{ .File.TranslationBaseName | urlize }} {
             background-image: url("{{ .Params.listing_image }}");
         }
     </style>
-    <a href="{{ .Permalink }}" class="w-full sm:w-1/2 bg-cover bg-right bg-no-repeat hover:opacity-90 hover:cursor-pointer z-20 case-study-image-{{ .File.TranslationBaseName | urlize }}">
+    <a href="{{ .Permalink }}" class="w-full sm:w-1/2 bg-cover bg-right bg-no-repeat hover:opacity-90 hover:cursor-pointer z-20 post-listing-image-{{ .File.TranslationBaseName | urlize }}">
         <div class="py-32"></div>
         <div class="flex flex-wrap">
-        <h6 class="w-auto bg-white font-ibm-serif text-2xs ml-5 px-1 uppercase">{{ delimit .Params.improvements ", " }}</h6>
-        <h5 class="w-full font-ibm-conds text-lg xl:text-2xl font-bold text-white pl-5 work-example-header">{{ .Params.website_url }}</h5>
+        <h6 class="w-auto bg-white font-ibm-serif text-2xs ml-5 px-1 uppercase">{{ delimit .Params.tags ", " }}</h6>
+        <h5 class="w-full font-ibm-conds text-lg xl:text-2xl font-bold text-white pl-5 work-example-header">{{ .Title }}</h5>
         </div>
         <div class="py-4"></div>
     </a>

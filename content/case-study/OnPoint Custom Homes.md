@@ -1,7 +1,10 @@
 +++
 date = "2019-04-24T05:00:00+00:00"
 title = "OnPoint Custom Homes"
+website_url = "Onpointcustomhomes.com"
+improvements = ["Sped up site", "Improved editing experience"]
 page_status = "case-study"
+listing_image = "https://res.cloudinary.com/animated-eagle/image/upload/b_black,o_90/v1567791487/greenZero/onpoint-project.jpg"
 publish_image = "https://res.cloudinary.com/animated-eagle/image/upload/b_black,o_50/v1567791487/greenZero/onpoint-project.jpg"
 meta_description = "We helped OnPoint Custom Homes speed up their website"
 +++
