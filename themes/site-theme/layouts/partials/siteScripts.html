@@ -6,13 +6,25 @@
 {{ if eq .Site.Params.extra_tools.floating_header true }}
 <script>
 var st = window.pageYOffset || document.documentElement.scrollTop;
+var body = document.querySelector('body');
+let logo = document.getElementById('logo-img');
 const header = document.querySelector(".header-container")
 const headerHeightFix = document.querySelector("#headerFloatingHeightFix")
 const headerHeight = header.offsetHeight
-const addHeaderFloat = () => header.classList.add("fixed", "z-50", "w-full", "bg-white", "shadow-lg", "header-fixed", "-mt-2");
+const addHeaderFloat = () => {
+  header.classList.add("fixed", "z-50", "w-full", "bg-white", "shadow-lg", "header-fixed", "-mt-2");
+  if (body.classList.contains('case-study')) {
+	  logo.src = "https://res.cloudinary.com/animated-eagle/image/upload/v1619460710/greenZero/greenzero-logo-full-color-rgb-svg.svg"
+  }
+}
 const addHeaderfloatTop = () => header.style.top=st + 'px';
 const addHeaderHeightFix = () => headerHeightFix.classList.add("h-20")
-const removeHeaderFloat = () => header.classList.remove("fixed", "shadow-lg", "header-fixed", "-mt-2");
+const removeHeaderFloat = () => {
+  header.classList.remove("fixed", "shadow-lg", "header-fixed", "-mt-2");
+  if (body.classList.contains('case-study')) {
+	  logo.src = "https://res.cloudinary.com/animated-eagle/image/upload/v1619460764/greenZero/greenzero-logo-inverted-rgb-white-svg.svg"
+  }
+}
 const removeHeaderHeightFix = () => headerHeightFix.classList.remove("h-20")
 
 var lastScrollTop = 0;
